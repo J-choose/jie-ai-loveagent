@@ -3,6 +3,26 @@ spring:
     name: yu-ai-agent
   profiles:
     active: local
+#  连接mysql数据库
+  datasource:
+    url: jdbc:mysql://localhost:3306/jie_ai_agent?useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    连接redis数据库
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password:
+      database: 0
+  ai:
+    chat:
+      memory:
+        repository:
+          jdbc:
+            initialize-schema: always
+            platform: mysql
 server:
   port: 8123
   servlet:
@@ -24,4 +44,5 @@ knife4j:
   enable: true
   setting:
     language: zh_cn
+
 

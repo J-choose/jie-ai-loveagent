@@ -1,4 +1,4 @@
-package com.yupi.yuaiagent;
+package com.yupi.yuaiagent.memorystation;
 
 import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;

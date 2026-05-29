@@ -90,11 +90,38 @@
             <artifactId>jsonschema-generator</artifactId>
             <version>4.38.0</version>
         </dependency>
-<!--        支持记忆持久化-->
+        <!--        支持记忆持久化-->
         <dependency>
             <groupId>com.esotericsoftware</groupId>
             <artifactId>kryo</artifactId>
             <version>5.6.2</version>
+        </dependency>
+        <!-- Spring AI JDBC 记忆仓库 -->
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-starter-model-chat-memory-repository-jdbc</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+        <!-- JDBC + MySQL 驱动 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <!--        redis依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+<!--        读取markdown文件-->
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-markdown-document-reader</artifactId>
+            <version>1.0.0-M6</version>
         </dependency>
 
 
